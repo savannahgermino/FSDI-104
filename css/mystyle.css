@@ -1,0 +1,67 @@
+html{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: #eceef0;
+    height:100vh;
+}
+h1{
+    color: white;
+    background-color: #094a65;
+    text-align: center;
+    padding:10px;
+}
+.capture-form{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #818181;
+    width:400px;
+    padding:20px;
+    border-radius: 5px;
+}
+.capture-form h3{
+    font-size: 1.5rem;
+    text-align: center;
+    margin:5px 0 10px 0;
+}
+.input-container{
+    padding:5px;
+}
+.input-container label{
+    display:inline-block;
+    width:100px;
+    text-align: right;
+}
+.input-container input{
+    display: inline-block;
+    width:200px;
+    margin-left: 10px;
+}
+#btnSave{
+    display: inline-block;
+    padding:8px;
+    border-radius: 5px;
+    margin-left:100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #185d78;
+    text-align: center;
+    border:none;
+}
+
+.alert-error{
+    border: 1px solid #db3a12;
+    background-color: rgb(197, 100, 100);
+    color: rgb(104, 29, 29);
+    padding:5px;
+}
+
+.input-error{
+    border:1px solid rgb(104, 29, 29);
+    background-color: rgb(197, 100, 100);
+}
+.hide{
+    display:none;
+}

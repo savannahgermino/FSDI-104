@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="registration.html">Register</a>
+        </nav>
+        <h1>User Registration System</h1>
+
+    </header>
+    <main>
+        <form class="capture-from" action="#">
+
+            <h3>Add a new user</h3>
+
+            <p id="alertError" class="alert-error hide">
+                Fill out all of the inputs!
+            </p>
+
+            <form action="#">
+                <div class="input-container">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="txtFirstname">
+                </div>
+                
+                <div class="input-container">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="txtLastname">
+                </div>
+                
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="txtEmail">
+                </div>
+
+                <div class="input-container">
+                    <label for="password">Password:</label>
+                    <input type="password" id="txtPassword">
+                </div>
+
+                <div class="input-container">
+                    <label for="age">Age:</label>
+                    <input type="age" id="txtAge">
+                </div>
+
+                <div class="input-container">
+                    <label for="address">Address:</label>
+                    <input type="address" id="txtAddress">
+                </div>
+
+                <div class="input-container">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="txtCardNumber">
+                </div>
+
+                <div class="input-container">
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="txtPhone">
+                </div>
+
+                <div class="input-container">
+                    <label for="color">Color:</label>
+                    <input type="color" id="txtColor">
+                </div>
+                <button id="btnSave" onclick="register()">Register</button>
+            </form>
+    </main> 
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/register.js"></script>
+</body>
+
+</html>
