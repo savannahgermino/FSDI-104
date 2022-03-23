@@ -23,15 +23,31 @@ function isValid(user){
         valid=false;
         console.log("You need to enter a password.")
     }
-
     if(!valid){
-        console.error("Missing data");
-        $("#alertError").removeClass("hide");
-        
+        displayError("Missing data");
     }
     return valid;
 }
 
+function validatePass(){
+    let txtPass=$("#txtPassword");
+    let password=txtPass.val();
+
+    if(password.length<6){
+        txtPass.css("border", "2px solid red"); //jQuery function
+        displayError("Error: password too short!");
+    }else{
+        txtPass.css("border", "2px solid green");
+        hideError();
+    }
+}
+function displayError(msg){
+    $("#alertError").removeClass("hide").text(msg);
+
+}
+function hideError(){
+    $("#alertError").addClass("hide");
+}
 function register(){
     let inputFirstName = $('#txtFirstname').val();
     let inputLastName = $('#txtLastname').val();
@@ -51,9 +67,11 @@ function register(){
         $("input").val("");
     }
     //validate the user *** Extra HW
+}
 
 function init(){
     console.log("Registration");
     //hook events
+    $("#txtPassword").change(validatePass);
 }
-window.onload=init}
+window.onload=init;
