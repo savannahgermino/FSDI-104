@@ -20,8 +20,9 @@
     <main>
         <!--users can only access info if logged on-->
         <!--display users table-->
-        <table>
+        <table id="usersTable">
             <thead>
+                <tr>
                 <th>First Name:</th>
                 <th>Last Name:</th>
                 <th>Email:</th>
@@ -30,11 +31,38 @@
                 <th>Card Number:</th>
                 <th>Phone Number:</th>
                 <th>Color:</th>
+                </tr>
             </thead>
+            <tbody id="tblUsers">
+               <tr>
+                    <td>Savannah</td>
+                    <td>Germino</td>
+                    <td>sav.germino@email.com</td>
+                    <td>25</td>
+                    <td>123 Sesame St</td>
+                    <td>000000000</td>
+                    <td>123-456-7890</td>
+                    <td>#094a65</td>
+               </tr>
+               <tr>
+                <td>Appa</td>
+                <td>Germino</td>
+                <td>appa.germino@email.com</td>
+                <td>3</td>
+                <td>321 Sesame St</td>
+                <td>0000000001</td>
+                <td>098-765-4321</td>
+                <td>#094a65</td>
+           </tr>
+            </tbody>
         </table>
     </main>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts/storeManager.js"></script>
     <script src="scripts/list.js"></script>
 </body>
+<footer>
+    
+</footer>
 </html>

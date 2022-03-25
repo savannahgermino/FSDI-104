@@ -20,3 +20,10 @@ function readUsers(){
         return list;
     }
 }
+
+function remove(index){
+     let data=readUsers();
+     data.splice(index, 1);
+     let val=JSON.stringify(data); 
+     localStorage.setItem(LS_KEY,val); 
+}

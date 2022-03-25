@@ -12,7 +12,16 @@ nav:hover{
 }
 body{
     background-color: #eceef0;
-    height:100vh;
+    min-height:100vh;
+}
+.home-page h3{
+    text-align: center;
+}
+.home-page img{
+    width:50%;
+    position:inherit;
+    margin-left: 23rem;
+    margin-top: 1rem;
 }
 h1{
     color: white;
@@ -27,11 +36,26 @@ h1{
     width:400px;
     padding:20px;
     border-radius: 5px;
+    margin-left: 32rem;
 }
 .capture-form h3{
     font-size: 1.5rem;
     text-align: center;
     margin:5px 0 10px 0;
+}
+.login-form{
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #818181;
+    width:400px;
+    padding:20px;
+    border-radius: 5px;
+    margin-left: 32rem;
+    margin-top: 1rem;
+}
+#btnSubmit{
+    margin-left: 12rem;
+    margin-top: 1rem;
 }
 .input-container{
     padding:5px;
@@ -72,4 +96,18 @@ h1{
 }
 .hide{
     display:none;
+}
+#usersTable{
+    position: absolute;
+    background-color: white;
+    box-shadow: 3px 1px 1px 1px #818181;
+    width:80%;
+    padding:30px;
+    border-radius: 5px;
+    margin: auto; 
+    margin-left: 6rem;
+}
+footer{
+    background-color: #094a65;
+    margin-top: auto;
 }

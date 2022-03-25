@@ -69,9 +69,25 @@ function register(){
     //validate the user *** Extra HW
 }
 
+function login(){
+    let inputEmail = $('#txtEmail').val();
+    let inputPassword = $('#txtPassword').val();
+
+    let users = readUsers();
+    console.log(inputEmail, inputPassword);
+    for(let i=0; i<users.length; i++)
+    {
+        if(users[i].email === inputEmail && users[i].password === inputPassword)
+        {
+            window.location = 'users.html';
+        }
+    }
+
+}
+
 function init(){
     console.log("Registration");
     //hook events
-    $("#txtPassword").change(validatePass);
+    $(".capture-form #txtPassword").change(validatePass);
 }
 window.onload=init;
